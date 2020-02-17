@@ -1,6 +1,5 @@
-require "cotoha/version"
+require 'cotoha/version'
+require 'cotoha/client'
 
 module Cotoha
-  class Error < StandardError; end
-  # Your code goes here...
 end
