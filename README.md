@@ -1,8 +1,8 @@
 # Cotoha
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cotoha`. To experiment with that code, run `bin/console` for an interactive prompt.
+[COTOHA API](https://api.ce-cotoha.com/contents/index.html) client for Ruby (unofficial)
 
-TODO: Delete this and the text above, and describe your gem
+![Ruby](https://github.com/tanaken0515/cotoha-ruby/workflows/Ruby/badge.svg?branch=master)
 
 ## Installation
 
