@@ -5,6 +5,7 @@ require 'cotoha/endpoint/coreference'
 require 'cotoha/endpoint/keyword'
 require 'cotoha/endpoint/similarity'
 require 'cotoha/endpoint/sentence_type'
+require 'cotoha/endpoint/user_attribute'
 
 module Cotoha
   module Endpoint
@@ -15,5 +16,6 @@ module Cotoha
     include Keyword
     include Similarity
     include SentenceType
+    include UserAttribute
   end
 end
