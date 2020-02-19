@@ -4,6 +4,7 @@ require 'cotoha/endpoint/named_entity'
 require 'cotoha/endpoint/coreference'
 require 'cotoha/endpoint/keyword'
 require 'cotoha/endpoint/similarity'
+require 'cotoha/endpoint/sentence_type'
 
 module Cotoha
   module Endpoint
@@ -13,5 +14,6 @@ module Cotoha
     include Coreference
     include Keyword
     include Similarity
+    include SentenceType
   end
 end
