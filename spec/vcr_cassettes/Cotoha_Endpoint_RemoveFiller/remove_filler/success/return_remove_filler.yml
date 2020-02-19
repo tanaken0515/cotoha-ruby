@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.ce-cotoha.com/api/dev/nlp/beta/remove_filler
+    body:
+      encoding: UTF-8
+      string: '{"text":"えーーっと、あの、何時に待ち合わせですっけ。","do_segment":false}'
+    headers:
+      User-Agent:
+      - Cotoha Ruby Gem 0.1.0 (ruby2.7.0)
+      Authorization:
+      - Bearer CorrectAccessToken
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Feb 2020 12:59:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '300'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - ": 1; mode=block"
+      X-Content-Type-Options:
+      - ": nosniff"
+      Via:
+      - 1.1 google
+      Access-Control-Allow-Origin:
+      - ''
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHQiOlt7ImZpbGxlcnMiOlt7ImJlZ2luX3BvcyI6MCwiZW5kX3BvcyI6NSwiZm9ybSI6IuOBiOODvOOBo+OBqOOAgSJ9LHsiYmVnaW5fcG9zIjo1LCJlbmRfcG9zIjo3LCJmb3JtIjoi44GC44GuIn1dLCJub3JtYWxpemVkX3NlbnRlbmNlIjoi44GI44O844Gj44Go44CB44GC44Gu44CB5L2V5pmC44Gr5b6F44Gh5ZCI44KP44Gb44Gn44GZ44Gj44GR44CCIiwiZml4ZWRfc2VudGVuY2UiOiLjgIHkvZXmmYLjgavlvoXjgaHlkIjjgo/jgZvjgafjgZnjgaPjgZHjgIIifV0sInN0YXR1cyI6MCwibWVzc2FnZSI6Ik9LIn0K
+    http_version: null
+  recorded_at: Wed, 19 Feb 2020 12:59:50 GMT
+recorded_with: VCR 5.1.0

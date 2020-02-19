@@ -6,6 +6,7 @@ require 'cotoha/endpoint/keyword'
 require 'cotoha/endpoint/similarity'
 require 'cotoha/endpoint/sentence_type'
 require 'cotoha/endpoint/user_attribute'
+require 'cotoha/endpoint/remove_filler'
 
 module Cotoha
   module Endpoint
@@ -17,5 +18,6 @@ module Cotoha
     include Similarity
     include SentenceType
     include UserAttribute
+    include RemoveFiller
   end
 end
