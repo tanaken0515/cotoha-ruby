@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.ce-cotoha.com/api/dev/nlp/v1/coreference
     body:
       encoding: UTF-8
-      string: '{"document":"太郎は友人だ。彼は焼き肉を食べた。","type":null,"do_segment":null}'
+      string: '{"document":"太郎は友人だ。彼は焼き肉を食べた。","type":null,"do_segment":false}'
     headers:
       User-Agent:
       - Cotoha Ruby Gem 0.1.0 (ruby2.7.0)

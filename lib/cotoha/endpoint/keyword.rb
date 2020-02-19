@@ -1,7 +1,7 @@
 module Cotoha
   module Endpoint
     module Keyword
-      def keywords(document:, type: nil, do_segment: nil, max_keyword_num: nil, dic_type: nil)
+      def keywords(document:, type: nil, do_segment: false, max_keyword_num: nil, dic_type: nil)
         params = {
           document: document,
           type: type,
