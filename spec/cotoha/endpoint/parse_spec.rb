@@ -13,4 +13,3 @@ RSpec.describe Cotoha::Endpoint::Parse do
     end
   end
 end
-
