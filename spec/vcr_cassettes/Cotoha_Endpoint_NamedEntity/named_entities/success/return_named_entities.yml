@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.ce-cotoha.com/api/dev/nlp/v1/ne
+    body:
+      encoding: UTF-8
+      string: '{"sentence":"私は犬が好きだ。よく代々木公園の近くを散歩している。","type":null,"dict_type":null}'
+    headers:
+      User-Agent:
+      - Cotoha Ruby Gem 0.1.0 (ruby2.7.0)
+      Authorization:
+      - Bearer CorrectAccessToken
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 19 Feb 2020 10:34:37 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '588'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Via:
+      - 1.1 google
+      Access-Control-Allow-Origin:
+      - ''
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJyZXN1bHQiIDogWyB7CiAgICAiYmVnaW5fcG9zIiA6IDEwLAogICAgImVuZF9wb3MiIDogMTUsCiAgICAiZm9ybSIgOiAi5Luj44CF5pyo5YWs5ZySIiwKICAgICJzdGRfZm9ybSIgOiAi5Luj44CF5pyo5YWs5ZySIiwKICAgICJjbGFzcyIgOiAiTE9DIiwKICAgICJleHRlbmRlZF9jbGFzcyIgOiAiIiwKICAgICJzb3VyY2UiIDogImJhc2ljIgogIH0sIHsKICAgICJiZWdpbl9wb3MiIDogMiwKICAgICJlbmRfcG9zIiA6IDMsCiAgICAiZm9ybSIgOiAi54qsIiwKICAgICJzdGRfZm9ybSIgOiAi54qsIiwKICAgICJjbGFzcyIgOiAiT1RIIiwKICAgICJleHRlbmRlZF9jbGFzcyIgOiAiTWFtbWFsIiwKICAgICJzb3VyY2UiIDogImJhc2ljIgogIH0sIHsKICAgICJiZWdpbl9wb3MiIDogNCwKICAgICJlbmRfcG9zIiA6IDcsCiAgICAiZm9ybSIgOiAi5aW944GN44GgIiwKICAgICJzdGRfZm9ybSIgOiAi5aW944GN44GgIiwKICAgICJjbGFzcyIgOiAiQVJUIiwKICAgICJleHRlbmRlZF9jbGFzcyIgOiAiTW92aWUiLAogICAgInNvdXJjZSIgOiAiYmFzaWMiCiAgfSBdLAogICJzdGF0dXMiIDogMCwKICAibWVzc2FnZSIgOiAiIgp9
+    http_version: null
+  recorded_at: Wed, 19 Feb 2020 10:34:37 GMT
+recorded_with: VCR 5.1.0
