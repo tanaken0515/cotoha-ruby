@@ -2,7 +2,7 @@
 
 [COTOHA API](https://api.ce-cotoha.com/contents/index.html) client for Ruby (unofficial)
 
-![RSpec](https://github.com/tanaken0515/cotoha-ruby/workflows/PSpec/badge.svg?branch=master)
+![RSpec](https://github.com/tanaken0515/cotoha-ruby/workflows/RSpec/badge.svg?branch=master)
 
 ## Installation
 
