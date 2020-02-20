@@ -22,7 +22,51 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Authentication
+
+```ruby
+# https://api.ce-cotoha.com/home  
+client_id = 'xxxxx'
+client_secret = 'xxxxx'
+
+client = Cotoha::Client.new(client_id: client_id, client_secret: client_secret)
+client.create_access_token
+# => {"access_token"=>"xxxxx", "token_type"=>"bearer", "expires_in"=>"86399", "scope"=>"", "issued_at"=>"1582159764808"}
+```
+
+Or, if you have identified the token in advance, 
+
+```ruby
+client = Cotoha::Client.new(token: 'xxxxx')
+```
+
+### Supported API Endpoints
+`cotoha` gem provides APIs as instance method.
+
+Example:
+```ruby
+client.user_attribute(document: '渋谷でエンジニアとして働いています。')
+# {"result"=>
+#   {"civilstatus"=>"既婚",
+#    "hobby"=>["COOKING", "INTERNET", "MOVIE", "SHOPPING"],
+#    "location"=>"関東",
+#    "moving"=>["RAILWAY"],
+#    "occupation"=>"会社員"},
+#  "status"=>0,
+#  "message"=>"OK"}
+
+client.sentiment(sentence: 'ゲームをするのが好きです。')
+# {"result"=>
+#   {"sentiment"=>"Positive",
+#    "score"=>0.4714220003626205,
+#    "emotional_phrase"=>[{"form"=>"好きです", "emotion"=>"P"}]},
+#  "status"=>0,
+#  "message"=>"OK"}
+```
+
+Refer to the [lib/cotoha/endpoint](https://github.com/tanaken0515/cotoha-ruby/tree/master/lib/cotoha/endpoint) for the list of all available endpoints.
+
+Also check out the official [API reference \| COTOHA API](https://api.ce-cotoha.com/contents/reference/apireference.html).
 
 ## Development
 
@@ -32,7 +76,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cotoha. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/cotoha/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/tanaken0515/cotoha-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/cotoha/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
