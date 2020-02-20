@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.ce-cotoha.com/api/dev/nlp/v1/coreference
+    body:
+      encoding: UTF-8
+      string: '{"document":"太郎は友人だ。彼は焼き肉を食べた。","type":null,"do_segment":false}'
+    headers:
+      User-Agent:
+      - Cotoha Ruby Gem 0.1.0 (ruby2.7.0)
+      Authorization:
+      - Bearer CorrectAccessToken
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Feb 2020 10:56:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '358'
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - ": 1; mode=block"
+      X-Content-Type-Options:
+      - ": nosniff"
+      Via:
+      - 1.1 google
+      Access-Control-Allow-Origin:
+      - ''
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHQiOnsiY29yZWZlcmVuY2UiOlt7InJlcHJlc2VudGF0aXZlX2lkIjowLCJyZWZlcmVudHMiOlt7InJlZmVyZW50X2lkIjowLCJzZW50ZW5jZV9pZCI6MCwidG9rZW5faWRfZnJvbSI6MCwidG9rZW5faWRfdG8iOjAsImZvcm0iOiLlpKrpg44ifSx7InJlZmVyZW50X2lkIjoxLCJzZW50ZW5jZV9pZCI6MCwidG9rZW5faWRfZnJvbSI6NSwidG9rZW5faWRfdG8iOjUsImZvcm0iOiLlvbwifV19XSwidG9rZW5zIjpbWyLlpKrpg44iLCLjga8iLCLlj4vkuroiLCLjgaAiLCLjgIIiLCLlvbwiLCLjga8iLCLnhLzjgY3ogokiLCLjgpIiLCLpo5/jgbkiLCLjgZ8iLCLjgIIiXV19LCJzdGF0dXMiOjAsIm1lc3NhZ2UiOiJPSyJ9Cg==
+    http_version: null
+  recorded_at: Wed, 19 Feb 2020 10:56:05 GMT
+recorded_with: VCR 5.1.0

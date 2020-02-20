@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.ce-cotoha.com/api/dev/nlp/v1/parse
+    body:
+      encoding: UTF-8
+      string: '{"sentence":"私は犬が好きだ。","type":null,"dict_type":null}'
+    headers:
+      User-Agent:
+      - Cotoha Ruby Gem 0.1.0 (ruby2.7.0)
+      Authorization:
+      - Bearer CorrectAccessToken
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 18 Feb 2020 14:11:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2394'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Via:
+      - 1.1 google
+      Access-Control-Allow-Origin:
+      - ''
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJyZXN1bHQiIDogWyB7CiAgICAiY2h1bmtfaW5mbyIgOiB7CiAgICAgICJpZCIgOiAwLAogICAgICAiaGVhZCIgOiAyLAogICAgICAiZGVwIiA6ICJEIiwKICAgICAgImNodW5rX2hlYWQiIDogMCwKICAgICAgImNodW5rX2Z1bmMiIDogMSwKICAgICAgImxpbmtzIiA6IFsgXQogICAgfSwKICAgICJ0b2tlbnMiIDogWyB7CiAgICAgICJpZCIgOiAwLAogICAgICAiZm9ybSIgOiAi56eBIiwKICAgICAgImthbmEiIDogIuODr+OCv+OCtyIsCiAgICAgICJsZW1tYSIgOiAi56eBIiwKICAgICAgInBvcyIgOiAi5ZCN6KmeIiwKICAgICAgImZlYXR1cmVzIiA6IFsgIuS7o+WQjeipniIgXSwKICAgICAgImRlcGVuZGVuY3lfbGFiZWxzIiA6IFsgewogICAgICAgICJ0b2tlbl9pZCIgOiAxLAogICAgICAgICJsYWJlbCIgOiAiY2FzZSIKICAgICAgfSBdLAogICAgICAiYXR0cmlidXRlcyIgOiB7IH0KICAgIH0sIHsKICAgICAgImlkIiA6IDEsCiAgICAgICJmb3JtIiA6ICLjga8iLAogICAgICAia2FuYSIgOiAi44OPIiwKICAgICAgImxlbW1hIiA6ICLjga8iLAogICAgICAicG9zIiA6ICLpgKPnlKjliqnoqZ4iLAogICAgICAiZmVhdHVyZXMiIDogWyBdLAogICAgICAiYXR0cmlidXRlcyIgOiB7IH0KICAgIH0gXQogIH0sIHsKICAgICJjaHVua19pbmZvIiA6IHsKICAgICAgImlkIiA6IDEsCiAgICAgICJoZWFkIiA6IDIsCiAgICAgICJkZXAiIDogIkQiLAogICAgICAiY2h1bmtfaGVhZCIgOiAwLAogICAgICAiY2h1bmtfZnVuYyIgOiAxLAogICAgICAibGlua3MiIDogWyBdCiAgICB9LAogICAgInRva2VucyIgOiBbIHsKICAgICAgImlkIiA6IDIsCiAgICAgICJmb3JtIiA6ICLniqwiLAogICAgICAia2FuYSIgOiAi44Kk44OMIiwKICAgICAgImxlbW1hIiA6ICLniqwiLAogICAgICAicG9zIiA6ICLlkI3oqZ4iLAogICAgICAiZmVhdHVyZXMiIDogWyBdLAogICAgICAiZGVwZW5kZW5jeV9sYWJlbHMiIDogWyB7CiAgICAgICAgInRva2VuX2lkIiA6IDMsCiAgICAgICAgImxhYmVsIiA6ICJjYXNlIgogICAgICB9IF0sCiAgICAgICJhdHRyaWJ1dGVzIiA6IHsgfQogICAgfSwgewogICAgICAiaWQiIDogMywKICAgICAgImZvcm0iIDogIuOBjCIsCiAgICAgICJrYW5hIiA6ICLjgqwiLAogICAgICAibGVtbWEiIDogIuOBjCIsCiAgICAgICJwb3MiIDogIuagvOWKqeipniIsCiAgICAgICJmZWF0dXJlcyIgOiBbICLpgKPnlKgiIF0sCiAgICAgICJhdHRyaWJ1dGVzIiA6IHsgfQogICAgfSBdCiAgfSwgewogICAgImNodW5rX2luZm8iIDogewogICAgICAiaWQiIDogMiwKICAgICAgImhlYWQiIDogLTEsCiAgICAgICJkZXAiIDogIk8iLAogICAgICAiY2h1bmtfaGVhZCIgOiAwLAogICAgICAiY2h1bmtfZnVuYyIgOiAxLAogICAgICAibGlua3MiIDogWyB7CiAgICAgICAgImxpbmsiIDogMCwKICAgICAgICAibGFiZWwiIDogImFnZW50IgogICAgICB9LCB7CiAgICAgICAgImxpbmsiIDogMSwKICAgICAgICAibGFiZWwiIDogImFvYmplY3QiCiAgICAgIH0gXSwKICAgICAgInByZWRpY2F0ZSIgOiBbIF0KICAgIH0sCiAgICAidG9rZW5zIiA6IFsgewogICAgICAiaWQiIDogNCwKICAgICAgImZvcm0iIDogIuWlveOBjSIsCiAgICAgICJrYW5hIiA6ICLjgrnjgq0iLAogICAgICAibGVtbWEiIDogIuWlveOBjSIsCiAgICAgICJwb3MiIDogIuWQjeipniIsCiAgICAgICJmZWF0dXJlcyIgOiBbICLlvaLlrrkiIF0sCiAgICAgICJkZXBlbmRlbmN5X2xhYmVscyIgOiBbIHsKICAgICAgICAidG9rZW5faWQiIDogMCwKICAgICAgICAibGFiZWwiIDogIm5zdWJqIgogICAgICB9LCB7CiAgICAgICAgInRva2VuX2lkIiA6IDIsCiAgICAgICAgImxhYmVsIiA6ICJubW9kIgogICAgICB9LCB7CiAgICAgICAgInRva2VuX2lkIiA6IDUsCiAgICAgICAgImxhYmVsIiA6ICJjb3AiCiAgICAgIH0sIHsKICAgICAgICAidG9rZW5faWQiIDogNiwKICAgICAgICAibGFiZWwiIDogInB1bmN0IgogICAgICB9IF0sCiAgICAgICJhdHRyaWJ1dGVzIiA6IHsgfQogICAgfSwgewogICAgICAiaWQiIDogNSwKICAgICAgImZvcm0iIDogIuOBoCIsCiAgICAgICJrYW5hIiA6ICLjg4AiLAogICAgICAibGVtbWEiIDogIuOBoCIsCiAgICAgICJwb3MiIDogIuWIpOWumuipniIsCiAgICAgICJmZWF0dXJlcyIgOiBbICLntYLmraIiIF0sCiAgICAgICJhdHRyaWJ1dGVzIiA6IHsgfQogICAgfSwgewogICAgICAiaWQiIDogNiwKICAgICAgImZvcm0iIDogIuOAgiIsCiAgICAgICJrYW5hIiA6ICIiLAogICAgICAibGVtbWEiIDogIuOAgiIsCiAgICAgICJwb3MiIDogIuWPpeeCuSIsCiAgICAgICJmZWF0dXJlcyIgOiBbIF0sCiAgICAgICJhdHRyaWJ1dGVzIiA6IHsgfQogICAgfSBdCiAgfSBdLAogICJzdGF0dXMiIDogMCwKICAibWVzc2FnZSIgOiAiIgp9
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 14:11:21 GMT
+recorded_with: VCR 5.1.0
